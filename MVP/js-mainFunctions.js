@@ -17,8 +17,11 @@ function pushKeybuttons(e) {
         correctButton.currentTime = 0;
         correctButton.play();
 
-    } else if(idString != "key-send" && idString != "key-delete") {
-        wrongButton.play();
+    } else if(idString != "key-delete") {        
+            wrongButton.pause();
+            wrongButton.currentTime = 0;
+            wrongButton.play();
+ 
     }
 
     if(key[1] == "delete") {
@@ -29,6 +32,10 @@ function pushKeybuttons(e) {
     }
 
     if(targetInput.innerHTML == "911" && idString == "key-send") {
+        wrongButton.pause();
+        wrongButton.currentTiem = 0;
+
+        targetInput.innerHTML == "";
         sequence01.play();
     }
 
