@@ -55,14 +55,19 @@ body {
   }
 
   .smartphone .content .bottom-number-line {
-    
+    width: 100%;
+    margin-right: 80px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;    
 
   }
 
   #displayUsrInput {
       width: 70%;
     height: 100px;
-    font-size: 2em;
+    font-size: 3em;
 
     
     margin-bottom: 15px;

@@ -5,19 +5,21 @@ function pushKeybuttons(e) {
     let targetInput = document.getElementById("displayUsrInput");
     let currentInput = targetInput.innerHTML;
 
-    if(currentInput == "" && newKey == 9) {
+    //Sound sources 
+    //  when the wrong keypads are pushed
+    let wrongButton = document.getElementById("wrongButton");
+    let correctButton = document.getElementById("correctButton");
+    let sequence01 = document.getElementById("sequence01");
+
+    if((currentInput == "" && newKey == 9) || (currentInput == "9" && newKey == 1) || (currentInput == "91" && newKey == 1)) {
         targetInput.innerHTML += newKey;
+        correctButton.pause();
+        correctButton.currentTime = 0;
+        correctButton.play();
+
+    } else if(idString != "key-send" && idString != "key-delete") {
+        wrongButton.play();
     }
-
-    if(currentInput == "9" && newKey == 1) {
-        targetInput.innerHTML += newKey;
-
-
-    }
-
-    if(currentInput == "91" && newKey == 1) {
-        targetInput.innerHTML += newKey;
-    } 
 
     if(key[1] == "delete") {
         if(targetInput.innerHTML.length > 0) {
@@ -26,10 +28,10 @@ function pushKeybuttons(e) {
         }
     }
 
-    console.log(targetInput.innerHTML);
+    if(targetInput.innerHTML == "911" && idString == "key-send") {
+        sequence01.play();
+    }
 
-    
-
-    //console.log(newKey);
+    //console.log(targetInput.innerHTML);
     
 }
