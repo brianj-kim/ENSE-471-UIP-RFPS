@@ -13,6 +13,7 @@ Instroductions :
   There are four key deliverable in this project , each deliberable will show to our customer in "check point time".
 File System introduction :
   Four Deliverable:
+  
        Deliverable 1: Problem definition document
                       Empathy maps and affinity diagraning documents
                       USM/MVP
@@ -40,7 +41,7 @@ Introduction of project :
          our project is a web app which simulate a phone call to 911 and get a response from 911 (simulated). This will help kid be prepare and get knowledge of how the 911 works during an emergency.
 Install requirements && install instructions:
          our wee app will work on every browser, so do not need any install.
-         Considering we do not have any server access so it is working on localhost, download the html
+         Considering we do not have any server access so it is working on localhost, download the mvp.html and open with any browser.
                        
                        
                      
