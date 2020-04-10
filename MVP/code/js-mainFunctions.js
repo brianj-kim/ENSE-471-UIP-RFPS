@@ -1,10 +1,14 @@
+
 // Delay 5 seconds 
 function wait(ms){
-    var start = new Date().getTime();
-    var end = start;
+    let start = new Date().getTime();
+    let end = start;
+ 
     while(end < start + ms) {
       end = new Date().getTime();
    }
+
+   targetInput.innerHTML = "";
  }
 function nextSequence(target) {
     target.pause();
@@ -17,6 +21,7 @@ function pushKeybuttons(e) {
     let key = idString.split("-"); // use key[1]
     let newKey = parseInt(key[1], 10);
     let targetInput = document.getElementById("displayUsrInput");
+    
     let currentInput = targetInput.innerHTML;
 
     //Sound sources 
@@ -75,6 +80,8 @@ function pushKeybuttons(e) {
         sequence01.play();
 
         sequence01.onended = function() {
+            //console.log("audio ended");
+            // timer start
             wait(4000);
             nextSequence(sequence02);
             //console.log('after');
@@ -101,7 +108,8 @@ function pushKeybuttons(e) {
         }
 
         sequence06.onended = function() {
-            alert("Congratulations! You have done the fire satefy training successfully!!");
+            modal.style.display = "block";
+
         }
 
     
