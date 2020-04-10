@@ -43,9 +43,10 @@ File System introduction :
                        
 Introduction of project :
 
-         our project is a web app which simulate a phone call to 911 and get a response from 911 (simulated). This will help kid be prepare and get knowledge of how the 911 works during an emergency.
+         Our project is a web app which simulate a phone call to 911 and get a response from 911 (simulated). 
+         This will help kid be prepare and get knowledge of how the 911 works during an emergency.
 Install requirements && install instructions:
-         our wee app will work on every browser, so do not need any install.
+         Our web app will work on every browser, so do not need any install.
          Considering we do not have any server access so it is working on localhost, download the mvp.html and open with any browser.
                        
                        
