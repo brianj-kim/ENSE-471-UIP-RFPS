@@ -14,7 +14,9 @@ Process :
 Instroductions : 
 
   There are four key deliverable in this project , each deliberable will show to our customer in "check point time".
-File System introduction :
+File System introduction(how-to documents) :
+     Deliverable 1 to 3 are storeed under Deliverable directories.
+     MVP as pur Deliverable4.
 
   Four Deliverable:
   
@@ -35,11 +37,10 @@ File System introduction :
                       customer notes
                       self/peer revier
                       
-       Deliverable 4:  mvp/sprint code
+      MVP(Deliverable 4):  mvp/sprint code(solution link)
                        people centered design docunemnts
                        project presentation file
                        video presentation and demostration
-                       solution link
                        
 Introduction of project :
 
