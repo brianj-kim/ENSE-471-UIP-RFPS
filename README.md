@@ -37,7 +37,7 @@ File System introduction(how-to documents) :
                       customer notes
                       self/peer revier
                       
-      MVP(Deliverable 4):  mvp/sprint code(solution link)
+      MVP(Deliverable 4):  mvp/sprint code(solution link:mvp.html)
                        people centered design docunemnts
                        project presentation file
                        video presentation and demostration
