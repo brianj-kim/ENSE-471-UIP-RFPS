@@ -1,3 +1,17 @@
+// Delay 5 seconds 
+function wait(ms){
+    var start = new Date().getTime();
+    var end = start;
+    while(end < start + ms) {
+      end = new Date().getTime();
+   }
+ }
+function nextSequence(target) {
+    target.pause();
+    target.currentTime = 0;
+    target.play();
+}
+
 function pushKeybuttons(e) {
     let idString = e.target.id;
     let key = idString.split("-"); // use key[1]
@@ -10,17 +24,38 @@ function pushKeybuttons(e) {
     let wrongButton = document.getElementById("wrongButton");
     let correctButton = document.getElementById("correctButton");
     let sequence01 = document.getElementById("sequence01");
+    let sequence02 = document.getElementById("sequence02");
+    let sequence03 = document.getElementById("sequence03");
+    let sequence04 = document.getElementById("sequence04");
+    let sequence05 = document.getElementById("sequence05");
+    let sequence06 = document.getElementById("sequence06");
+
+    wrongButton.play();
+    wrongButton.pause();
+    wrongButton.currentTime = 0;
+
+    correctButton.play();
+    correctButton.pause();
+    correctButton.currentTime = 0;
 
     if((currentInput == "" && newKey == 9) || (currentInput == "9" && newKey == 1) || (currentInput == "91" && newKey == 1)) {
         targetInput.innerHTML += newKey;
+
+        wrongButton.pause();
+        wrongButton.currentTime = 0;
+
         correctButton.pause();
         correctButton.currentTime = 0;
+
         correctButton.play();
 
-    } else if(idString != "key-delete") {        
-            wrongButton.pause();
-            wrongButton.currentTime = 0;
-            wrongButton.play();
+    } else if(idString != "key-delete") {   
+        correctButton.pause();
+        correctButton.currentTime = 0;
+
+        wrongButton.pause();
+        wrongButton.currentTime = 0;
+        wrongButton.play();
  
     }
 
@@ -31,12 +66,49 @@ function pushKeybuttons(e) {
         }
     }
 
+    // the training sequence begins from here
     if(targetInput.innerHTML == "911" && idString == "key-send") {
         wrongButton.pause();
         wrongButton.currentTiem = 0;
 
-        targetInput.innerHTML == "";
+        targetInput.innerHTML = "";
         sequence01.play();
+
+        sequence01.onended = function() {
+            wait(4000);
+            nextSequence(sequence02);
+            //console.log('after');
+        };
+
+        sequence02.onended = function() {
+            wait(4000);
+            nextSequence(sequence03);
+        };
+
+        sequence03.onended = function() {
+            wait(15000);
+            nextSequence(sequence04);
+        };
+
+        sequence04.onended = function() {
+            wait(5000);
+            nextSequence(sequence05);
+        }
+
+        sequence05.onended = function() {
+            wait(15000);
+            nextSequence(sequence06);
+        }
+
+        sequence06.onended = function() {
+            alert("Congratulations! You have done the fire satefy training successfully!!");
+        }
+
+    
+
+        
+        //delay(5, nextSequence(document.getElementById("sequence02")));
+    
     }
 
     //console.log(targetInput.innerHTML);
