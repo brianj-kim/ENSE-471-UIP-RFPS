@@ -36,3 +36,7 @@ document.getElementById("key-00").addEventListener("click", pushKeybuttons, true
 document.getElementById("key-send").addEventListener("click", pushKeybuttons, true );
 document.getElementById("key-delete").addEventListener("click", pushKeybuttons, true );
 
+
+
+
+

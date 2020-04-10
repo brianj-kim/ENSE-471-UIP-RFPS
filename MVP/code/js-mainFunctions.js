@@ -9,9 +9,31 @@ function wait(ms){
    }
  }
 function nextSequence(target) {
+    document.getElementById("displayUsrInput").innerHTML = "";
+    document.getElementById("displayUsrInput").style = "";
     target.pause();
     target.currentTime = 0;
     target.play();
+}
+
+function sequenceTwo() {
+    nextSequence(sequence02);
+}
+
+function sequenceThree() {
+    nextSequence(sequence03);
+}
+
+function sequenceFour() {
+    nextSequence(sequence04);
+}
+
+function sequenceFive() {
+    nextSequence(sequence05);
+}
+
+function sequenceSix() {
+    nextSequence(sequence06);
 }
 
 function pushKeybuttons(e) {
@@ -75,42 +97,60 @@ function pushKeybuttons(e) {
         wrongButton.currentTiem = 0;
 
         targetInput.innerHTML = "";
-        sequence01.play();
+        sequence01.play();         
 
         sequence01.onended = function() {
-            //console.log("audio ended");
+            targetInput.innerHTML = "Next";
+            targetInput.style = "cursor: pointer;";
+            targetInput.addEventListener("click", sequenceTwo, true);
             // timer start
-            wait(4000);
-            nextSequence(sequence02);
+            //wait(4000);            
+            //extSequence(sequence02);
             //console.log('after');
         };
-
+        
         sequence02.onended = function() {
-            wait(4000);
-            nextSequence(sequence03);
-        };
+            targetInput.removeEventListener("click", sequenceTwo, true);
 
-        sequence03.onended = function() {
-            wait(15000);
-            nextSequence(sequence04);
+            targetInput.innerHTML = "Next";
+            targetInput.style = "cursor: pointer;";
+
+            targetInput.addEventListener("click", sequenceThree, true);  
+
+        };
+        
+        sequence03.onended = function() {   
+            targetInput.removeEventListener("click", sequenceThree, true);
+            targetInput.innerHTML = "Next";
+            targetInput.style = "cursor: pointer;";
+
+            targetInput.addEventListener("click", sequenceFour, true);
         };
 
         sequence04.onended = function() {
-            wait(5000);
-            nextSequence(sequence05);
+            targetInput.removeEventListener("click", sequenceFour, true);
+
+            targetInput.innerHTML = "Next";
+            targetInput.style = "cursor: pointer;";
+            targetInput.addEventListener("click", sequenceFive, true);
         }
 
         sequence05.onended = function() {
-            wait(15000);
-            nextSequence(sequence06);
+            targetInput.removeEventListener("click", sequenceFive, true);
+
+            targetInput.innerHTML = "Next";
+            targetInput.style = "cursor: pointer;";
+            targetInput.addEventListener("click", sequenceSix, true);
         }
 
         sequence06.onended = function() {
+            targetInput.removeEventListener("click", sequenceSix, true);
+
             modal.style.display = "block";
 
         }
 
-    
+
 
         
         //delay(5, nextSequence(document.getElementById("sequence02")));
