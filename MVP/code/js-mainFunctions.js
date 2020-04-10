@@ -7,8 +7,6 @@ function wait(ms){
     while(end < start + ms) {
       end = new Date().getTime();
    }
-
-   targetInput.innerHTML = "";
  }
 function nextSequence(target) {
     target.pause();
