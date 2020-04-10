@@ -49,8 +49,8 @@ Install requirements && install instructions:
          Our web app will work on every browser, so do not need any install.
          Considering we do not have any server access so it is working on localhost, download the mvp.html and open with any browser.
                        
-                       
-                     
+Capture of MVP                      
+          ![Capture](https://user-images.githubusercontent.com/55845823/78951012-d3c37180-7a8d-11ea-9e6b-355e7421e079.PNG)
                       
                 
                       
