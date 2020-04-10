@@ -4,14 +4,18 @@ Interactive project with Regina Fire &amp; Protection Service(RFPS)
 Unversity of Regina / ENSE 471 / User Interface Programming (Winter 2020) class project
 
 Requirement:
+
   Regina Fire & Protective Services (RFPS) has provided an interactive activity, delivered by firefighters, designed to lead
 kindergarten to grade three students through the components of a family fire escape plan.
   Main task :This project create unique and lacks relevance with current technology and communication tool.
 Process :
+
   Design Thinking/Fast Feedback Cycle, User Story Mapping (USM), Minimum Viable Products (MVP).
 Instroductions : 
+
   There are four key deliverable in this project , each deliberable will show to our customer in "check point time".
 File System introduction :
+
   Four Deliverable:
   
        Deliverable 1: Problem definition document
@@ -38,6 +42,7 @@ File System introduction :
                        solution link
                        
 Introduction of project :
+
          our project is a web app which simulate a phone call to 911 and get a response from 911 (simulated). This will help kid be prepare and get knowledge of how the 911 works during an emergency.
 Install requirements && install instructions:
          our wee app will work on every browser, so do not need any install.
