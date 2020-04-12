@@ -1,13 +1,14 @@
 # ENSE-471-UIP-RFPS
 Interactive project with Regina Fire &amp; Protection Service(RFPS)
 
-Unversity of Regina / ENSE 471 / User Interface Programming (Winter 2020) class project
+Unversity of Regina / ENSE 471 User Interface Programming (Winter 2020) class project
 
 Requirement:
 
-  Regina Fire & Protective Services (RFPS) has provided an interactive activity, delivered by firefighters, designed to lead
+  Regina Fire & Protective Services (RFPS) has required an imporved training interactive activity, delivered by firefighters, designed to lead
 kindergarten to grade three students through the components of a family fire escape plan.
   Main task :This project create unique and lacks relevance with current technology and communication tool.
+
 Process :
 
   Design Thinking/Fast Feedback Cycle, User Story Mapping (USM), Minimum Viable Products (MVP).
@@ -43,13 +44,15 @@ File System introduction(how-to documents) :
                        video presentation and demostration
                        
 Introduction of project :
-
-         Our project is a web app which simulate a phone call to 911 and get a response from 911 (simulated). 
-         This will help kid be prepare and get knowledge of how the 911 works during an emergency.
-Install requirements && install instructions:
-         Our web app will work on every browser, so do not need any install.
-         Considering we do not have any server access so it is working on localhost, download the mvp.html and open with any browser.
-                       
+         Our goal for this project is to build an application which simulates an emergency phone call training via smartphone environment, while current training device is outdated. 
+         This will help kindergarten and early elementary school kids to be prepared and to get some experience of how to interact with the 911 agent during an emergency situations occur.
+         
+         
+Installation requirements && instructions:
+         The application we are going to build is to be on the web-application platform. So, the application will work on every browser without any installation.
+         In addition to that, we consider that the application does not need any interaction with servers, such as database and application servers. It only requires to download the all files of the application to a local drive and to execute on any browser (mvp.html) right away.
+         
+         
 Capture of MVP                      
           ![Capture](https://user-images.githubusercontent.com/55845823/78951012-d3c37180-7a8d-11ea-9e6b-355e7421e079.PNG)
                       
