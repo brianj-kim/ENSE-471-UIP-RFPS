@@ -50,7 +50,7 @@ Introduction of project :
          
 Installation requirements && instructions:
          The application we are going to build is to be on the web-application platform. So, the application will work on every browser without any installation.
-         In addition to that, we consider that the application does not need any interaction with servers, such as database and application servers. It only requires download the all files to local drive and execute on any browser (mvp.html) right away.
+         In addition to that, we consider that the application does not need any interaction with servers, such as database and application servers. It only requires download the all files of the application to local drive and execute on any browser (mvp.html) right away.
          
          
 Capture of MVP                      
