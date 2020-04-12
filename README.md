@@ -44,13 +44,11 @@ File System introduction(how-to documents) :
                        video presentation and demostration
                        
 Introduction of project :
-
          Our goal for this project is to build an application which simulates a emergency phone call training via smartphone environment, while current training device is outdated. 
          This will help kindergarten and early elementary school kids to be prepared and to get some experience of how to interact with the 911 agent during an emergency situations occur.
          
          
 Installation requirements && instructions:
-
          The application we are going to build is to be on the web-application platform. So, the application will work on every browser without any installation.
          In addition to that, we consider that the application does not need any interaction with servers, such as database and application servers. It only requires download the all files to local drive and execute on any browser (mvp.html) right away.
          
