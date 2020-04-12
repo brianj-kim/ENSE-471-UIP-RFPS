@@ -44,7 +44,7 @@ File System introduction(how-to documents) :
                        video presentation and demostration
                        
 Introduction of project :
-         Our goal for this project is to build an application which simulates a emergency phone call training via smartphone environment, while current training device is outdated. 
+         Our goal for this project is to build an application which simulates an emergency phone call training via smartphone environment, while current training device is outdated. 
          This will help kindergarten and early elementary school kids to be prepared and to get some experience of how to interact with the 911 agent during an emergency situations occur.
          
          
